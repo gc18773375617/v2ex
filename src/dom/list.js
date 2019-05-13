@@ -1,14 +1,13 @@
 import React,{Component} from 'react'
-import '../css/list.css'
 import axios from 'axios'
 
 class List extends Component {
-	componentDidMount(){
-		console.log("sadf");
+	componentDidMount=()=>{
 		axios.get("/api/topics/hot.json")
 		.then(res=>{
-			console.log(res)
+			
 		});
+		console.log(this)
 	}
 	render(){
 		return(

@@ -1,13 +1,15 @@
 import React,{Component} from 'react'
-import {BrowserRouter as Router ,Route, Link} from 'react-router-dom'
+import {Route,Switch} from 'react-router-dom'
 import List from '../dom/list'
+import '../css/list.scss'
 class router extends Component{
     render(){
         return(
-            <Router>
-                <Link to="/list">List</Link>
-                <Route path="/list" component={List} />
-            </Router>
+            <div>
+                <Switch>
+                    <Route path="/list/:type" component={List} />
+                </Switch>
+            </div>
         )
     }
 }

@@ -1,0 +1,12 @@
+$nav-color: red;
+h1{
+    color: $nav-color;
+}
+.box {
+    width: 300px;
+    height: 400px;
+    >.title {
+      height: 30px;
+      line-height: 30px;
+    }
+  }
